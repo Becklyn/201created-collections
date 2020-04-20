@@ -1,0 +1,29 @@
+{
+    "name": "201created/collections",
+    "description": "Extension to tightenco/collect used in 201Created projects",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Marko Vujnovic",
+            "email": "ms@201created.de"
+        }
+    ],
+    "require": {
+        "tightenco/collect": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "C201\\Collections\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "C201\\Collections\\Tests\\": "tests/"
+        }
+    }
+}
