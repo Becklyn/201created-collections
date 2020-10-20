@@ -2,16 +2,14 @@
 
 namespace C201\Collections;
 
-use Tightenco\Collect\Support\Collection;
-
 /**
  * @author Marko Vujnovic <mv@201created.de>
  * @since  2019-06-13
+ *
+ * @deprecated
+ * @see \C201\Support\Collections\IterableToCollectionConstructionTrait
  */
 trait IterableToCollectionConstructionTrait
 {
-    protected function collectionFromIterable(iterable $var): Collection
-    {
-        return $var instanceof Collection ? $var: Collection::make($var);
-    }
+    use \C201\Support\Collections\IterableToCollectionConstructionTrait;
 }

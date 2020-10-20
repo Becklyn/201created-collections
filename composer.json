@@ -1,9 +1,9 @@
 {
     "name": "201created/collections",
-    "description": "Extension to tightenco/collect used in 201Created projects",
+    "description": "Deprecated extension to tightenco/collect used in 201Created projects. Use 201created/support instead.",
     "type": "library",
     "license": "MIT",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "authors": [
         {
             "name": "Marko Vujnovic",
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "tightenco/collect": "^7.4"
+        "201created/support": "^0.1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.1"
@@ -25,5 +25,11 @@
         "psr-4": {
             "C201\\Collections\\Tests\\": "tests/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:c201/201created-support.git"
+        }
+    ]
 }
